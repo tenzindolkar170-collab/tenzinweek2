@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="hero">
+    <video id="video-background" autoplay loop muted playsinline aria-hidden="true">
+      <source src="0_Code_Programming_3840x2160.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <h1>Welcome to My Portfolio</h1>
+    <p>This is a small portfolio about myself.</p>
+  </header>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="brand">Tenzin</div>
+
+    <button id="menu-button" class="menu-button" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+
+    <ul id="primary-nav" class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Hey! I’m Tenzin Dolkar Lama — a second-year student at Herald who survives on Korean dramas and good vibes. I’m pretty sporty, I love keeping myself busy, and I enjoy trying new things that help me learn and grow. I’m just a chill person figuring life out one step at a time. 😌✨</p>
+        </div>
+        <div id="image">
+          <img src="C:\Users\Dell\Desktop\portfolio-tenzindolkar\tenzin.jpg" alt="My photo">
+        </div>
+      </div>
+    </section>
+
+    <section id="project">
+      <h2>My projects</h2>
+      <p>I am still at the early stage of my learning journey, so I haven’t created any major projects yet. However, I have worked on several small projects that helped me understand the basics of programming and design. Each project has taught me something new and pushed me to improve my skills. I am committed to learning more and building better projects in the future.</p>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Mini ToDo</h3>
+          <p>Practice with DOM and JS.</p>
+        </article>
+        <article class="project-card">
+          <h3>Responsive Landing</h3>
+          <p>Flexbox & Grid practice.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact info</h2>
+      <form id="contact-form" novalidate>
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" required></textarea><br /><br />
+
+        <button type="submit">Submit</button>
+        <div id="form-message" class="form-message" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
